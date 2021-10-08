@@ -1168,3 +1168,16 @@ animate({
 			Element.prototype.msMatchesSelector;
 	}
 })();
+const navLine = document.querySelectorAll('.card__message'),
+	navItem = document.querySelectorAll('.card__favorite');
+console.log(navLine)
+
+
+navItem.forEach(el => {
+	el.addEventListener('click', (e) => {
+		e.currentTarget.classList.toggle("_active");
+	});
+
+});
+
+

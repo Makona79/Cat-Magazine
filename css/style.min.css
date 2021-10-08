@@ -770,7 +770,31 @@ textarea {
 }
 
 .card__favorite._active {
+  color: #e62d2d;
+}
+
+.card__favorite._active+.card__message {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__message {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 47%;
+  right: 2%;
+  font-size: 14px;
   color: #fff;
+  z-index: 1;
+  -webkit-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+
+.card__message._active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .card__image {
